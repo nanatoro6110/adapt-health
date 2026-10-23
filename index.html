@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1f4b43" />
+    <title>ADAPT — 健康を、自分のペースで。</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#dashboard" aria-label="ADAPT home"><span>✦</span> ADAPT</a>
+        <p class="brand-sub">health, at your pace</p>
+        <nav id="nav" aria-label="メインメニュー"></nav>
+        <div class="side-bottom"><button class="text-btn" data-action="export">↓ データを書き出す</button><button class="text-btn danger" data-action="reset">⌫ この端末のデータを消去</button></div>
+      </aside>
+      <main>
+        <header class="mobile-header"><a class="brand" href="#dashboard"><span>✦</span> ADAPT</a><button id="menuButton" class="icon-btn" aria-label="メニューを開く">☰</button></header>
+        <section id="dashboard" class="page active"></section>
+        <section id="log" class="page"></section>
+        <section id="food" class="page"></section>
+        <section id="sleep" class="page"></section>
+        <section id="insights" class="page"></section>
+        <section id="settings" class="page"></section>
+      </main>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="recordDialog"><form method="dialog" id="recordForm"></form></dialog>
+    <script src="./app.js"></script>
+  </body>
+</html>

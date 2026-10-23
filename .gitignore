@@ -1,0 +1,7 @@
+# OS and editor files
+.DS_Store
+.vscode/
+
+# Local development and exports
+node_modules/
+adapt-data-*.json
